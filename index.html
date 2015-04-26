@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>ng-waterfall</title>
+    <meta name="description" content="a simple demo directive for waterfall with angular">
+    <meta name="keywords" content="ng, waterfall, angular">
+    <meta name="author" content="Thunf">
+
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="dist/ng-waterfall.min.css">
+    <link rel="stylesheet" href="assets/demo.css">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" href="./favicon.ico">
+</head>
+<body ng-app="demo">
+
+    <div class="container" ng-controller="WaterfallCtrl">
+        <div class="row">
+            <div class="col-xs-12">
+                <div ng-waterfall="waterfallParams"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="http://cdn.bootcss.com/jquery/2.1.3/jquery.min.js"></script>
+    
+    <script src="http://cdn.bootcss.com/angular.js/1.3.15/angular.min.js"></script>
+
+    <script src="dist/ng-waterfall.min.js"></script>
+
+    <script src="assets/demo.js"></script>
+
+    <script type="text/ng-template" id="assets/template.html">
+        <div class="stpics">
+            <div class="wooscr woo">
+                <div class="g">「别人家的作品」- 未知系列...</div>
+                <div class="d">
+                    <span class="d1">59</span>
+                    <span class="d2 dn">0</span>
+                    <span class="d3 dn">0</span>&nbsp;
+                    <a class="bl " href="#" target="_blank">
+                        <u class="_tb" title="去购买">￥11.1</u>
+                    </a>
+                </div>
+                <ul>
+                    <li class="f">
+                        <a target="_blank" href="#">
+                            <img width="24" height="24" ng-src="{{datas[0].src}}">
+                        </a>
+                        <p>
+                            <a class="p" href="#">测了个试</a>&nbsp;
+                            <br>
+                            <span>收集到&nbsp;</span>
+                            <a class="spana" href="#" >想吃不能吃才是最痛...</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </script>
+
+
+</body>
+</html>

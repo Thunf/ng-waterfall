@@ -1,0 +1,136 @@
+ /*
+  * only used to demo at index.html
+  */
+
+body {
+    font-size: 12px;
+    line-height: 1.5;
+    font-family: tahoma,arial,sans-serif;
+    color: #666
+}
+
+ul,p {
+    margin: 0;
+    padding: 0
+}
+
+u{
+    font-style: normal;
+    text-decoration: none
+}
+
+.stpics {
+    line-height: 1.5;
+    width: auto;
+}
+
+.stpics .woo {
+    +display: inline;
+    height: auto;
+    background-color: #fff;
+}
+
+
+.stpics .g {
+    clear: both;
+    overflow: hidden;
+    padding: 10px 12px 10px 12px;
+    margin: 0;
+    color: #444444;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.stpics div.d {
+    overflow: hidden;
+    padding: 0 12px 0 12px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-bottom: none;
+}
+
+.stpics .d span {
+    float: left;
+    +display: inline;
+    line-height: 19px;
+    padding: 0 0 0 16px;
+    margin: 0 8px 0 0;
+    background-image: url("http://img5.duitang.com/uploads/people/201405/28/20140528162525_djtAu.png");
+    background-repeat: no-repeat;
+    font-size: 13px;
+    color: #a0a0a0;
+}
+
+.stpics .d .d1 {
+    background-position: -5px -50px;
+}
+
+.stpics .d .d2 {
+    background-position: -90px -50px;
+}
+
+.stpics .d .d3 {
+    background-position: -175px -50px;
+}
+
+.stpics ul {
+    zoom:1;display: block;
+    padding: 0 0 8px 0;
+}
+
+.stpics li:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}
+
+.stpics li img {
+    width: 24px;
+    height: 24px;
+    float: left;
+    +display: inline;
+    margin: 0 8px 0 0;
+    border-radius: 26px;
+}
+
+.stpics li p {
+    float: left;
+    +display: inline;
+    width: calc(100% - 32px);
+    max-width: 400px;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+}
+
+.stpics li a {
+    color: #666;
+}
+
+.stpics li span {
+    color: #888;
+    white-space: nowrap;
+    float: left;
+}
+
+.stpics .woo .d a.bl:link,
+.woo .d a.bl:visited {
+    float: right;
+    color: #F14382;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+.spana{
+    float: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: calc(100% - 40px);
+    max-width: 100%;
+}
+.f{
+    padding: 10px;
+}

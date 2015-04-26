@@ -143,11 +143,6 @@
             }
         });
 
-        $scope.imgLoad = function(item, index){
-            $scope.total++;
-            toWaterfall($scope.params.$params.containerId, $scope.params.$params.cols);
-        };
-
         var toWaterfall = this.toWaterfall = function(containId, cols){
 
             var container = angular.element('#'+containId);
@@ -207,15 +202,6 @@
             }
         };
 
-        var compileNewBox = this.compileNewBox = function(datas){
-
-            if($element.attr("ng-waterfall")){
-
-                $element.addClass("ng-waterfall clearfix") .attr({"id": $scope.params.$params.containerId});
-
-            }
-        };
-
         var compileEachBox = this.compileEachBox = function(datas){
 
             if($element.attr("ng-waterfall")){
@@ -228,6 +214,7 @@
                 angular.forEach(datas,function(box){
 
                     var imgTemp = angular.element(document.createElement('img'))
+                        .css({'height': box.scale * $scope.params.$params.colsWidth})
                         .attr({
                             'src': box.src || '',
                             'alt': box.alt || '',
@@ -282,7 +269,7 @@
                         $scope.$watch($attrs.ngWaterfall,function(params){
                             $scope.params = params;
                         },false);
-                        
+
                     }
                 };
             }

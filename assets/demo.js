@@ -2,6 +2,11 @@ var app = angular.module('demo', ['ngWaterfall']);
 
 app.controller('WaterfallCtrl', function ($scope, $q, ngWaterfallParams) {
 
+    var picDatas = [
+        [600,399],[300,385],[300,421],[1280,850], [381,586],
+        [300,420],[300,243],[300,420],[300,357],[300,224]
+    ];
+
 
     $scope.waterfallParams = new ngWaterfallParams({
         name: "我是一个瀑布流组件",
@@ -18,11 +23,12 @@ app.controller('WaterfallCtrl', function ($scope, $q, ngWaterfallParams) {
 
             $scope.datas = [];
 
-            for(var i = 10; i--; ){
+            for(var i = 0; i < 10; i++ ){
                 $scope.datas.push({
-                    'src': 'assets/images/pic(' + random() + ').jpg',
-                    'title': 'My number is ' + random(),
-                    'alt': 'ng-waterfall'
+                    'src': 'assets/images/demopic(' + i + ').jpg',
+                    'title': 'My number is ' + i,
+                    'alt': 'ng-waterfall',
+                    'scale': picDatas[i][1]/picDatas[i][0]
                 });
             }
 

@@ -1,0 +1,29 @@
+{
+  "name": "ng-waterfall",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Thunf/ng-waterfall",
+  "authors": [
+    "Thunf <458859360@qq.com>"
+  ],
+  "description": "a simple demo directive for waterfall with angular",
+  "main": [
+    "./dist/ng-waterfall.js",
+    "./dist/ng-waterfall.css"
+  ],
+  "keywords": [
+    "angular",
+    "ng",
+    "waterfall"
+  ],
+  "dependencies": {
+    "angular": "~1"
+  },
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

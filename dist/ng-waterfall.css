@@ -29,7 +29,6 @@
   }
 }
 .ng-waterfall .outbox .box {
-  padding: 5px;
   background-color: #fff;
   box-shadow: 1px 1px 2px #aaa;
 }
@@ -37,6 +36,5 @@
   width: 100%;
   max-width: 100%;
   margin-bottom: 5px;
-  background-color: #eee;
-  border: 1px solid #ccc;
+  background-color: #fff;
 }
